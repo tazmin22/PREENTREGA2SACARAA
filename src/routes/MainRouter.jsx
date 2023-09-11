@@ -1,23 +1,26 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../components/pages/home";
-import Category from "../components/pages/Category";
-import NavBarComponent from "../components/NavBarComponents/NavBarComponents";
-
+ import { BrowserRouter, Routes, Route } from "react-router-dom";
+ import Home from "../components/pages/home";
+ import Category from "../components/pages/Category";
+ import NavBarComponent from "../components/NavBarComponents/NavBarComponents";
 
 const MainRouter = () => {
 
-    return (
+     return (
         <BrowserRouter>
-         < NavBarComponent />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/category/category:Id" element={<category />} />
-            <Route path="/item/itemId" element={<Home />} />
+          < NavBarComponent />
+         <Routes>
+         <Route path="/" element={< Home />}></Route>
+       
+         <Route path="/category/:categoryId" element={<Category />} />
+            
+             {/* <Route path="/category/category:Id" element={<category />} /> */}
+           
          
         </Routes>
-        </BrowserRouter>
+         </BrowserRouter>
     )
-}
+    
+ }
 
-export default MainRouter
+ export default MainRouter

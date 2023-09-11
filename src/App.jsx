@@ -1,25 +1,34 @@
 
 
-import NavBarComponent from './components/NavBarComponents/NavBarComponents';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import axios from 'axios';
-import { useEffect } from 'react';
-import MainRouter from './routes/MainRouter';
 
 
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+ import axios from 'axios';
+ import { useEffect, useState } from "react";
+  import MainRouter from './routes/MainRouter';
+  import { BrowserRouter } from 'react-router-dom';
+  import Home from './components/pages/home';
+  
 
+
+
+
+import React from 'react'
 
 const App = () => {
   return (
-    <div>
-     
+    <div> <main> <MainRouter /> </main>
+    
+    
+      
+      App
       
       
-        
-      <MainRouter /> 
-    </div>
+      
+      </div>
+
   )
 }
-export default App;
+
+export default App
