@@ -4,7 +4,7 @@ import React from "react";
  import Category from "../components/pages/Category";
  import NavBarComponent from "../components/NavBarComponents/NavBarComponents";
  import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
- import itemDetailsContainer from "../components/ItemDetailsContainer/ItemListContainer";
+ import ItemDetailsContainer from "../components/ItemDetailsContainer/ItemListContainer";
 
 const MainRouter = () => {
 
@@ -15,7 +15,7 @@ const MainRouter = () => {
          <Route path="/" element={< Home />}></Route>
        
          <Route path="/category/:categoryId" element={<Category />} />
-         <Route path="/item/:productId" element={<itemDetailsContainer />} />
+         <Route path="/item/:productId" element={<ItemDetailsContainer />} />
            
          
         </Routes>
