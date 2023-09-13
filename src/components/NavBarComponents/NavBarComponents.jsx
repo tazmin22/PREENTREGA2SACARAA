@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
+import Category from '../pages/Category';
+import Home from '../pages/home';
 
  const NavBar = () => {
    return (
@@ -20,10 +22,10 @@ import { Link } from 'react-router-dom';
                     </Nav.Link>
              <NavDropdown title="Categorias" id="basic-nav-dropdown">
                <NavDropdown.Item>
-                     <Link to="/category/categoryid">Categoria1</Link>
+                     <Link to="/category/bajo">Categoria1</Link>
                </NavDropdown.Item>
                <NavDropdown.Item>
-                 <Link to="/category/categoria2">Categoria2</Link>
+                 <Link to="/category/alto">Categoria2</Link>
                </NavDropdown.Item>
              </NavDropdown>
            </Nav>

@@ -3,6 +3,8 @@ import React from "react";
  import Home from "../components/pages/home";
  import Category from "../components/pages/Category";
  import NavBarComponent from "../components/NavBarComponents/NavBarComponents";
+ import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
+ import itemDetailsContainer from "../components/ItemDetailsContainer/ItemListContainer";
 
 const MainRouter = () => {
 
@@ -13,8 +15,7 @@ const MainRouter = () => {
          <Route path="/" element={< Home />}></Route>
        
          <Route path="/category/:categoryId" element={<Category />} />
-            
-             {/* <Route path="/category/category:Id" element={<category />} /> */}
+         <Route path="/item/:productId" element={<itemDetailsContainer />} />
            
          
         </Routes>
